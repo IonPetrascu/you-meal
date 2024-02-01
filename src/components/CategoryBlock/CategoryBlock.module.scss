@@ -1,0 +1,20 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1290px;
+    overflow: hidden;
+    padding: 0px 20px;
+}
+
+.categories {
+    display: flex;
+    gap: 24px;
+    padding: 40px 75px 25px 0px;
+    margin-bottom: 25px;
+
+    @media (max-width: 1250px) {
+        overflow-x: auto;
+      }
+  
+}

@@ -1,0 +1,71 @@
+@use '../styles/mixin.scss' as mixin;
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1300px;
+    background-color: #fff;
+    display: flex;
+   
+    gap: 20px;
+    padding: 20px;
+    padding-top: 60px;
+
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h4 {
+
+        margin-right: 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    span {
+        margin-top: 30px;
+        display: block;
+        font-size: 20px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+
+    }
+
+    ul {
+        margin-top: 10px;
+        list-style-type: none;
+    }
+
+    @media (max-width:700px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.btnBack{
+    background: transparent;
+    border: none;
+    padding: 10px 15px ;
+    background-color: mixin.$yellow;
+    transition:background-color 300ms ease ;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+
+    &:hover{
+        background-color: mixin.$darker-orange; 
+    }
+    &:focus{
+        background-color: mixin.$darker-orange; 
+      
+    }
+}

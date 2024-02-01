@@ -1,0 +1,71 @@
+@use '../../styles/mixin.scss' as mixin;
+
+header {
+    color: #fff;
+    margin: 0 auto;
+    background: url('../../assets/images/bg.svg') center/cover no-repeat;
+    max-width: 1440px;
+    height: 466px;
+    display: flex;
+    justify-content: center;
+
+    &>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @media (max-width:700px) {
+
+      height: auto;
+      
+    
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width:700px) {
+
+        flex-direction: column-reverse;
+
+
+    }
+}
+
+
+.title {
+    h1 {
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 120%;
+        margin-bottom: 52px;
+        display: flex;
+        flex-direction: column;
+
+
+        span {
+            color: mixin.$darker-orange;
+        }
+
+        @media (max-width:700px) {
+            margin-top: 24px;
+            font-size: 1.875em;
+            text-align: center;
+            margin-bottom: 16px;
+        
+        }
+    }
+
+    &>span {
+        font-weight: 400;
+
+        b {
+            font-weight: 600;
+        }
+    }
+}

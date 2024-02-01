@@ -1,0 +1,38 @@
+@use '../../../styles/mixin.scss' as mixin;
+
+.button {
+    border: none;
+    padding: 11px 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: mixin.$silver;
+    color: mixin.$black;
+    transition: background-color 200ms ease-in-out;
+    cursor: pointer;
+    color: #000;
+    font-size: 16px;
+    line-height: 100%;
+
+    &:hover {
+        background-color: mixin.$yellow;
+    }
+
+    &:focus-visible {
+        background-color: mixin.$darker-orange;
+        outline: none;
+
+    }
+
+    &:active {
+        border: none;
+    }
+
+    &.disabled {
+        color: #ACACAC;
+        background-color: mixin.$gray;
+    }
+
+}

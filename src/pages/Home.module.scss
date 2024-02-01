@@ -1,0 +1,38 @@
+@use '../styles/mixin.scss' as mixin;
+
+.content {
+    max-width: 1290px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0px 0px 50px 30px;
+
+    @media (max-width:990px) {
+        padding: 0px 15px 100px;
+        flex-direction: column;
+        align-items: center;
+     }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    justify-content: start;
+    gap: 15px;
+
+    @media (max-width:1260px) {
+        
+        max-width: 630px;
+       
+    }
+
+    @media (max-width:990px) {
+        max-width: 100% ;
+        justify-content: center;
+        margin: 0 auto;
+     }
+   
+    
+}

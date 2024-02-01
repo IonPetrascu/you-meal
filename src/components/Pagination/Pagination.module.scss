@@ -1,0 +1,32 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 30px ;
+}
+
+.btnPage {
+    padding: 6px 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: mixin.$yellow;
+    transition: background-color 200ms ease-in-out;
+    cursor: pointer;
+
+
+    &:hover {
+        background-color: mixin.$darker-orange;
+    }
+}
+
+.btnPageActive {
+    background-color: mixin.$darker-orange;
+}
+
+.pagesList {
+    gap: 20px;
+    display: flex;
+}

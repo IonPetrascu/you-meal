@@ -1,0 +1,74 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    color: mixin.$black;
+    padding-block: 16px;
+    border-bottom: 1px solid #F2F2F3;
+}
+
+.img {
+    width: 64px;
+    height: 52px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.title {
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 1px;
+    align-self: flex-start;
+    max-width: 170px;
+
+}
+
+.mass {
+    color: #B1B1B1;
+    padding-bottom: 2px;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+}
+
+.price {
+
+
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+}
+
+.info {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    padding-left: 6px;
+
+}
+
+.count {
+    padding: 9px 12px;
+    background-color: mixin.$silver;
+    border-radius: 12px;
+    width: 84px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    span {}
+}

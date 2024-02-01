@@ -1,0 +1,118 @@
+@use '../styles/mixin.scss' as mixin;
+
+.cartPages{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.cart {
+    width: 60%;
+    margin: auto auto;
+    border-radius: 18px;
+    background-color: #fff;
+    padding: 70px 16px 28px;
+    height: max-content;
+
+
+    .cartItems {
+        height: 400px;
+        overflow: auto;
+       
+
+
+    }
+
+    .empty_cart {
+        font-size: 16px;
+        font-style: normal;
+        line-height: 130%;
+        text-align: center;
+       
+    }
+
+    @media (max-width:750px) {
+        width: 90%;
+    }
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #F2F2F3;
+
+    h3 {
+        color: mixin.$black;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    span {
+        padding: 2px 16px;
+        color: mixin.$black;
+        text-align: center;
+        font-size: 12px;
+        border-radius: 6px;
+        background: mixin.$gray;
+
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    .results {
+        padding: 16px 0px 24px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        &>span {
+            line-height: 130%;
+        }
+    }
+
+    .delivery {
+        padding-top: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        span {
+            font-size: 12px;
+        }
+
+    }
+}
+
+.buttonBuy {
+
+    margin: 0 auto;
+}
+
+.btnBack {
+    background: transparent;
+    border: none;
+    padding: 10px 15px;
+    background-color: mixin.$yellow;
+    transition: background-color 300ms ease;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+
+    &:hover {
+        background-color: mixin.$darker-orange;
+    }
+
+    &:focus {
+        background-color: mixin.$darker-orange;
+
+    }
+}

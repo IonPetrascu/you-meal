@@ -1,0 +1,33 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.category {
+    display: flex;
+    gap: 8px;
+    padding: 8px 14px;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #fff;
+    transition: background-color 300ms ease-in-out, transform 220ms ease-in;
+
+    &:hover {
+        background-color: mixin.$yellow;
+        transform: translateY(-5px);
+    }
+
+    cursor: pointer;
+
+    span {
+        color: mixin.$black;
+        line-height: normal;
+        width: max-content;
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    &_active {
+        background-color: mixin.$yellow;
+    }
+}
