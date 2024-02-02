@@ -30,7 +30,7 @@ const Product: React.FC = () => {
   
   return (
     <>
-      <Link to="/">
+      <Link to="/you-meal/">
         <button className={styles.btnBack}> {'<'} Вернуться обратно</button>
       </Link>
       <div className={styles.wrapper}>

@@ -21,7 +21,7 @@ const Cart: React.FC = () => {
 
   return (
     <div className={styles.cart}>
-      <Link to="/cart">
+      <Link to="/you-meal/cart">
         <div className={styles.header}>
           <h3>Корзина</h3>
           <span>{countCartProducts}</span>

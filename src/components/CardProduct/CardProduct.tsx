@@ -40,7 +40,7 @@ const CardProduct: React.FC<CartProductProps> = ({
       <div className={styles.cardProduct}>
         <img onClick={() => setPopUpProduct(!popUpProduct)} src={imgUrl} alt={title} />
         <h4>{price}₽</h4>
-        <Link to={`/product/${id}`}>
+        <Link to={`/you-meal/product/${id}`}>
           <span>{title}</span>
         </Link>
 

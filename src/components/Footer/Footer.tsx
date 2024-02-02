@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <div style={{ background: '#fff' }}>
       <div className={styles.footer}>
         <div className={styles.wrapper}>
-          <Link to="/">
+          <Link to="/you-meal/">
             <img src="logo-lg.svg" alt="YourMeal" />
           </Link>
           <div className={styles.info}>

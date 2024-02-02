@@ -65,9 +65,12 @@
         height: 300px;
         border-radius: 16px;
         align-self: baseline;
+       
 
         @media(max-width:510px) {
             min-width: 50px;
+            margin: 0 auto;
+            height: 150px;
         }
 
         img {
@@ -158,11 +161,11 @@
         justify-content: space-between;
 
         @media (max-width:510px) {
-         display: flex;
-         justify-content: space-between;
-         width: 100%;
-         align-items: center;
-        
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+
         }
     }
 
