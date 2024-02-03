@@ -1,9 +1,10 @@
-import { CartSliceState } from "../redux/cartSlice";
+import { CartItemProps } from "../components/cartItem/CartItem";
+
 
 
 export const getCartFromLS = () => {
   const data = localStorage.getItem('cart');
-  const cartItems:CartSliceState = data ? JSON.parse(data) : [];
+  const cartItems:CartItemProps[] = data ? JSON.parse(data) : [];
 
 
   return {

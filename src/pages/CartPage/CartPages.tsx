@@ -1,11 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import styles from './CartPages.module.scss';
-import CartItem from '../components/cartItem/CartItem';
-import ButtonBuy from '../components/button/buttonBuy/ButtonBuy';
+import CartItem from '../../components/cartItem/CartItem';
+import ButtonBuy from '../../components/button/buttonBuy/ButtonBuy';
 import { Link } from 'react-router-dom';
-import Footer from '../components/Footer/Footer';
-import { RootState } from '../redux/store';
+import Footer from '../../components/Footer/Footer';
+import { RootState } from '../../redux/store';
 
 
 type TotalPriceValue = {

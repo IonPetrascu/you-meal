@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 
-import Header from '../components/Header/Header';
-import Cart from '../components/cart/Cart';
-import CategoryBlock from '../components/CategoryBlock/CategoryBlock';
+import Header from '../../components/Header/Header';
+import Cart from '../../components/cart/Cart';
+import CategoryBlock from '../../components/CategoryBlock/CategoryBlock';
 import styles from './Home.module.scss';
-import CardProduct from '../components/CardProduct/CardProduct';
-import Footer from '../components/Footer/Footer';
+import CardProduct from '../../components/CardProduct/CardProduct';
+import Footer from '../../components/Footer/Footer';
 import { useSelector, useDispatch } from 'react-redux';
-import { addItemCart } from '../redux/cartSlice';
-import { fetchProduct } from '../redux/productSlice';
-import Pagination from '../components/Pagination/Pagination';
-import SkeletonProduct from '../components/SkeletonProduct/SkeletonProduct';
-import { RootState } from '../redux/store';
-import { CartItemProps } from '../components/cartItem/CartItem';
+import { addItemCart } from '../../redux/cartSlice';
+import { fetchProduct } from '../../redux/productSlice';
+import Pagination from '../../components/Pagination/Pagination';
+import SkeletonProduct from '../../components/SkeletonProduct/SkeletonProduct';
+import { RootState } from '../../redux/store';
+import { CartItemProps } from '../../components/cartItem/CartItem';
 
 const Home: React.FC = () => {
   const { categoryActive, items, status } = useSelector((state: RootState) => state.productSlice);
